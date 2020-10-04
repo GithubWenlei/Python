@@ -45,12 +45,16 @@ class Author():
             self.Name.append("%s. %s%s"%(self.FamilyName,self.MiddleName[0],self.LastName[0]))
             self.Name.append("%s%s. %s"%(self.MiddleName[0],self.LastName[0],self.FamilyName))
             self.Name.append("%s %s-%s"%(self.FamilyName,self.MiddleName,self.LastName))
+            self.Name.append("%s, %s%s"%(self.FamilyName,self.MiddleName[0],self.LastName[0]))
+             
         
 docfile="代表性论文及检索列表1003v2.docx"
-ipaper=3
-OrgTitle="Variable order fractional differential operators in anomalous diffusion modeling"
-OrgAuthor=[Author('Sun',"Hong",'Guang'),Author("Chen","","Wen"),Author("Chen","Yang","Quan")]
-f=open('savedrecs.txt','r',encoding='utf-8')
+ipaper=7
+#OrgTitle="Variable order fractional differential operators in anomalous diffusion modeling"
+#OrgAuthor=[Author('Sun',"Hong",'Guang'),Author("Chen","","Wen"),Author("Chen","Yang","Quan")]
+OrgTitle="Impact of climate change on flood and drought events in Huaihe River Basin, China"
+OrgAuthor=[Author('Yang',"Chuan",'Guo'),Author("Yu","Zhong","Bo"),Author("Hao","Zhen","Chun"),Author("Zhang","Jiang","Yun"),Author("Zhu","Jian","Ting")]
+f=open('savedrecs (1).txt','r',encoding='utf-8')
 d=f.readlines()
 a=[]
 author=[]
